@@ -5,7 +5,7 @@
 int main()
 {
     float a1, d;
-    int n;
+    int n, x,x2,x4,x6,x8;
     float aa1, a2, b1, b2, jarak;
     //variable();
     //kelilingpersegi(2,9);
@@ -21,7 +21,8 @@ int main()
     //removeDigitInNumber(d);
     //sumdigit(n);
     //reverseNumber(n);
-    DistanceBetweenTwoPoint(aa1, a2, b1,b2, jarak);
+    //DistanceBetweenTwoPoint(aa1, a2, b1,b2, jarak);
+    efficiendCalculated(x,x2,x4,x6,x8);
     return 0;
 }
 
@@ -265,8 +266,18 @@ void DistanceBetweenTwoPoint(float x1,float y1,float x2,float y2,float distance)
     printf("distance between two point : (%.2f, %.2f) and (%.2f, %.2f) is %.2f \n",
            x1,y1, x2, y2,distance);
     //%.2f 2 angak dibelakang koma
-
-
-
 }
+
+ void efficiendCalculated(int x, int x2, int x4, int x6, int x8){
+    printf("hasilnya x : ");
+    scanf("%d",&x);
+    x2 =  x * x;
+    x4 = x2 * x2;
+    x6 = x4 * x2;
+    x8 = x4 * x4;
+    printf("x2  : %d \n",x2);
+    printf("x4  : %d \n",x4);
+    printf("x6  : %d \n",x6);
+    printf("x8  : %d \n", x8);
+ }
 
